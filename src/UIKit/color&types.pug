@@ -4,10 +4,22 @@ mixin col-sample(color,hex)
     h2.sample__col-name = color 
     h2.sample__hex = hex
 
-+col-sample('Dark Shade 100%', '#1F2041')
-+col-sample('Dark Shade 75%', '#1F2041')
-+col-sample('Dark Shade 50%', '#1F2041')
-+col-sample('Dark Shade 25%', '#1F2041')
-+col-sample('Dark Shade 5%', '#1F2041')
-+col-sample('Purple', '#BC9CFF')
-+col-sample('Green', '#1F2041')
++col-sample('Dark Shade 100%', '#1F2041')(class = "ds100")
++col-sample('Dark Shade 75%', '#1F2041')(class = 'ds75')
++col-sample('Dark Shade 50%', '#1F2041')(class = 'ds50')
++col-sample('Dark Shade 25%', '#1F2041')(class = 'ds25')
++col-sample('Dark Shade 5%', '#1F2041')(class = 'ds5')
++col-sample('Purple', '#BC9CFF')(class = 'purple')
++col-sample('Green', '#1F2041')(class = 'green')
+
+mixin text-sample(name, purpose)
+  .type
+    .type__name = name 
+    .type__purpose = purpose
+
++text-sample('H1', 'This one is the sub-section or widget title')
++text-sample('H2','Next one is the item title inside
+widgets')
++text-sample('H3','This is a label or CTA text')
++text-sample('body','This is the body text which is used for most
+of the design, like paragraphs, lists, etc.')
