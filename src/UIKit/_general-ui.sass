@@ -1,0 +1,35 @@
+$primary-color-ds100  (#1F2041)
+$primary-color-ds75   rgba($primary-color-ds100, .75)
+$primary-color-ds50   rgba($primary-color-ds100, .5)
+$primary-color-ds25   rgba($primary-color-ds100, .25)
+$primary-color-ds5    rgba($primary-color-ds100, .05)
+
+@font-face 
+    font-family: "Montserrat"
+    src: url("src\UIKit\montserrat-v15-latin-regular.woff2")
+
+%headings
+  font-weight: bold
+  color: $primary-color-ds100
+
+h1
+  @extend %headings
+  font-size: 24px
+  line-height: 29px
+
+h2
+  @extend %headings
+  font-size: 19
+  line-height: 23
+
+h3
+  @extend %headings
+  font-size: 12px
+  line-height: 15px
+  text-transform:  uppercase
+
+.body-text
+  color: $primary-color-ds75
+  font-weight: normal
+  font-size: 14px
+  line-height: 24px
