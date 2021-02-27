@@ -1,0 +1,27 @@
+.ct-grid-container 
+    
+    display: inline-grid
+    //@include col(2)
+    //@include row(7)
+
+    grid-template-columns: 1fr 1fr
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr
+
+    row-gap: 20
+    column-gap: 423
+    justify-items: start
+      
+    .sample
+      
+      display: grid
+      grid-template-columns: 70 171
+      grid-template-rows: 1fr 1fr
+      &__square
+        grid-row: 1 / second-line
+        height: 1 / span 2
+      
+      &__data  
+        
+        &__hex
+          font-weight: normal
+
