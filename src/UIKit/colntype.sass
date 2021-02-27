@@ -1,8 +1,7 @@
+@import 'general-ui'
+
 .ct-grid-container 
-    
     display: inline-grid
-    //@include col(2)
-    //@include row(7)
 
     grid-template-columns: 1fr 1fr
     grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr 1fr
@@ -12,16 +11,44 @@
     justify-items: start
       
     .sample
-      
       display: grid
-      grid-template-columns: 70 171
+      grid-template-columns: 70px 171
       grid-template-rows: 1fr 1fr
-      &__square
-        grid-row: 1 / second-line
-        height: 1 / span 2
       
-      &__data  
+      &__square.ds100
+        background-color: $primary-color-ds100
+
+      &__square.ds75
+        background-color: $primary-color-ds75
+
+      &__square.ds50  
+          background-color: $primary-color-ds50
         
-        &__hex
-          font-weight: normal
+      &__square.ds25
+         background-color: $primary-color-ds25
+        
+      &__square.ds5  
+        background-color: $primary-color-ds5
+        
+      &__square.purple
+
+      &__square.green
+          background-color: green
+        
+
+      &__square
+        border-radius: 6px
+        grid-row: 1 / third-line
+        grid-column: 1 / 2
+        width: 70
+        height: 70
+      
+      &__data__color-name
+        grid-row: 1 / 2
+
+      &__data__hex
+          grid-row: 2 / 3
+          font-weight: normal  
+        
+        
 
