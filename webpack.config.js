@@ -10,10 +10,17 @@ module.exports = {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js'
     },
+    devServer: {
+      port: 3080,
+    },
     module: {
       rules: [
+        { 
+          test: /\.pug$/,
+          use: ['pug-loader']
+        },
         {
-          test: /\.s[a|c]ss$/,
+          test: /\.s[ac]ss$/,
           use: [
             'style-loader',
             'css-loader',
@@ -32,7 +39,7 @@ module.exports = {
       }),
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
-        filename: 'output.pug'
+        template: './src/index.pug'
       }),
       new HtmlWebpackPugPlugin()
     ]
