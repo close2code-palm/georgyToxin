@@ -4,7 +4,10 @@
   "description": "2. task for the METAAAALAAAMP",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development",
+    "start:dev": "webpack-dev-server --mode=development"
   },
   "repository": {
     "type": "git",
@@ -31,16 +34,12 @@
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.1.2",
     "extract-text-webpack-plugin": "^3.0.2",
-    "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.0",
     "html-webpack-pug-plugin": "^2.0.1",
-    "loader": "^2.1.1",
     "node-sass": "^5.0.0",
     "npm-install-webpack-plugin": "^4.0.5",
-    "pug-loader": "^2.4.0",
     "sass-loader": "^11.0.1",
     "scss-config-webpack-plugin": "^2.0.0",
-    "style": "0.0.3",
     "style-loader": "^2.0.0",
     "webpack": "^5.0.0",
     "webpack-cli": "^4.5.0"
