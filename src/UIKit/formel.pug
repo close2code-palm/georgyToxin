@@ -26,6 +26,29 @@ nav.pages Pagination
   )
   input.facilities__tv(type="checkbox", name="Телевизор")
   input.facilities__shampoo(type="checkbox", name="Шампунь")
-    
+  
+  .textField
+    label(for="textField") Textfield 
+      input#textField(
+        type="email", 
+        name="Textfield", 
+        value="This is pretty awersome"
+      )
+
+  .dateField 
+    label(for="dateField") Masked textfield(mb for date)
+      input#dateField(
+        type="date", 
+        name="Masked text field", 
+        value="ДД.ММ.ГГГГ"
+      )
+  
+  form.dropdown
+    label(
+      for="guestsquant",
+      value="Сколько гостей"
+    )
+      select#guestsquant(name="guests")
+        option(value="")  
 
 
