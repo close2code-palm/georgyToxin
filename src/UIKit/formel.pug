@@ -5,8 +5,6 @@ nav.pages Pagination
   - for (var x = 0; x < 3; x++)
   a.show-page#{x}
 
-
-
 .facilities
    input.facilities__breakfst(type="checkbox", name="Завтрак")
    input.facilities__desk(
@@ -43,12 +41,8 @@ nav.pages Pagination
         value="ДД.ММ.ГГГГ"
       )
   
-  form.dropdown
-    label(
-      for="guestsquant",
-      value="Сколько гостей"
-    )
-      select#guestsquant(name="guests")
-        option(value="")  
-
+ul.dropdown
+    li Спальни
+    li Кровати
+    li Ванные комнаты
 
