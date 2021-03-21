@@ -1,7 +1,17 @@
-mixin pros(icon, naming, explanation)
-  span.material-icons(icon)
-  h3.name(naming)
-  p = explanation
-
-+pros('mood', 'Комфорт', 'Шумопоглощающие стены')
-+pros('location_city', 'Удобства', 'Окно в каждой из спален')
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Form Elements
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    body 
+      
+      
+      mixin pros(icon, naming, explanation)
+        span.material-icons.md-blue(icon)
+        h3.name(naming)
+        p = explanation
+      
+      +pros('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
+      +pros('location_city', 'Удобства', 'Окно в каждой из спален')

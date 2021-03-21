@@ -1,15 +1,23 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Colors #{'&'} Type
+    link(rel="stylesheet", href="style.css")
+  body
+
 mixin col-sample(color,hex)
   .sample
     .sample__square  
     .sample__data
-      h2.sample__data__color-name #{color} 
-      h2.sample__data__hex #{hex}
+      h2.sample__data_color-name #{color} 
+      h2.sample__data_hex #{hex}
 
 
 mixin text-sample(name, purpose)
   .type-sample
-    span.type-sample__name #{name}
-    span.type-sample__purpose #{purpose}
+    span.type-sample_name #{name}
+    span.type-sample_purpose #{purpose}
 
 
 .ct-grid-container

@@ -1,6 +1,47 @@
 @import 'general-ui'
 
-.ct-grid-container 
+.sample
+  display: grid
+  grid-template-columns: 70px 171
+  grid-template-rows: 1fr 1fr
+      
+  &__square.ds100
+    background-color: $primary-color-ds100
+
+  &__square.ds75
+    background-color: $primary-color-ds75
+
+  &__square.ds50  
+      background-color: $primary-color-ds50
+        
+  &__square.ds25
+     background-color: $primary-color-ds25
+        
+  &__square.ds5  
+    background-color: $primary-color-ds5
+        
+  &__square.purple
+
+  &__square.green
+    background-color: green
+      
+
+  &__square
+    border-radius: 6px
+    grid-row: 1 / third-line
+    grid-column: 1 / 2
+    width: 70
+    height: 70
+      
+  &__data_color-name
+    grid-row: 1 / 2
+
+  &__data_hex
+      grid-row: 2 / 3
+      font-weight: normal  
+        
+        
+  .ct-grid-container 
     display: inline-grid
 
     grid-template-columns: 1fr 1fr
@@ -10,45 +51,4 @@
     column-gap: 423
     justify-items: start
       
-    .sample
-      display: grid
-      grid-template-columns: 70px 171
-      grid-template-rows: 1fr 1fr
-      
-      &__square.ds100
-        background-color: $primary-color-ds100
-
-      &__square.ds75
-        background-color: $primary-color-ds75
-
-      &__square.ds50  
-          background-color: $primary-color-ds50
-        
-      &__square.ds25
-         background-color: $primary-color-ds25
-        
-      &__square.ds5  
-        background-color: $primary-color-ds5
-        
-      &__square.purple
-
-      &__square.green
-          background-color: green
-        
-
-      &__square
-        border-radius: 6px
-        grid-row: 1 / third-line
-        grid-column: 1 / 2
-        width: 70
-        height: 70
-      
-      &__data__color-name
-        grid-row: 1 / 2
-
-      &__data__hex
-          grid-row: 2 / 3
-          font-weight: normal  
-        
-        
 

@@ -8,27 +8,27 @@ $sec-col:   #8BA4F9
   height: 44px
   border-radius: 22px
   
-button-blue
+.button_blue
   @include button
   background: linear-gradient(180deg, $prime-col 0%, $sec-col 100%)
 
-button-blue-transparent
+.button_blue-transparent
   @extend button-blue
   opacity: 50%
 
-button-white
+.button_white
   @include button
   border: 2px solid
   background: white
   border-image-source: linear-gradient(180deg, $prime-col 0%, $sec-col 100%)
   color: $prime-col
 
-button-white-transparent
+.button_white-transparent
   @extend button-white
   opacity: 0.5
 
-big-blue-button
-  @extend blue-button
+.cta-button
+  @extend button_blue
   width: 320
 
 
