@@ -1,0 +1,40 @@
+$prime-col: #BC9CFF
+$sec-col:   #8BA4F9
+
+@mixin button
+  font-size: 12px
+  text-transform: uppercase
+  width: 99px
+  height: 44px
+  border-radius: 22px
+  
+button-blue
+  @include button
+  background: linear-gradient(180deg, $prime-col 0%, $sec-col 100%)
+
+button-blue-transparent
+  @extend button-blue
+  opacity: 50%
+
+button-white
+  @include button
+  border: 2px solid
+  background: white
+  border-image-source: linear-gradient(180deg, $prime-col 0%, $sec-col 100%)
+
+button-white-transparent
+  @extend button-white
+  opacity: 0.5
+
+big-blue-button
+  @extend blue-button
+  width: 320
+
+
+  
+  
+  
+      
+
+  
+  
