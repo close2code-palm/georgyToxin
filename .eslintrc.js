@@ -14,7 +14,7 @@ module.exports = {
   rules: {
   },
   plugins: [
-    "pug",
-    "babel"
+    'pug',
+    'babel'
   ]
 }
