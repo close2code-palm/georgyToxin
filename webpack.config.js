@@ -47,7 +47,7 @@ module.exports = {
         useTabs: false,               // Indent lines with tabs instead of spaces.
         semi: true,                   // Print semicolons at the ends of statements.
         encoding: 'utf-8',            // Which encoding scheme to use on files
-        extensions: [ ".js", ".ts", ".sass" ]  // Which file extensions to process
+        extensions: [ ".js", ".pug", ".sass" ]  // Which file extensions to process
       }),
       new ESLintPlugin(options),
       new CopyPlugin({
