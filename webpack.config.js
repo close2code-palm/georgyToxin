@@ -4,7 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 import HtmlWebpackPugPlugin from 'html-webpack-pug-plugin';
 const ESLintPlugin = require('eslint-webpack-plugin');
-const PrettierPlugin = require("prettier-webpack-plugin");
+const PrettierPlugin = require('prettier-webpack-plugin');
 
 
 module.exports = {
@@ -47,7 +47,7 @@ module.exports = {
         useTabs: false,               // Indent lines with tabs instead of spaces.
         semi: true,                   // Print semicolons at the ends of statements.
         encoding: 'utf-8',            // Which encoding scheme to use on files
-        extensions: [ ".js", ".ts" ]  // Which file extensions to process
+        extensions: [ ".js", ".ts", ".sass" ]  // Which file extensions to process
       }),
       new ESLintPlugin(options),
       new CopyPlugin({
