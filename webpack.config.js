@@ -3,6 +3,9 @@ const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 import HtmlWebpackPugPlugin from 'html-webpack-pug-plugin';
+const ESLintPlugin = require('eslint-webpack-plugin');
+const PrettierPlugin = require("prettier-webpack-plugin");
+
 
 module.exports = {
     entry: './src/index.js',
@@ -38,6 +41,15 @@ module.exports = {
       ]
     },
     plugins: [
+      new PrettierPlugin({
+        printWidth: 80,               // Specify the length of line that the printer will wrap on.
+        tabWidth: 2,                  // Specify the number of spaces per indentation-level.
+        useTabs: false,               // Indent lines with tabs instead of spaces.
+        semi: true,                   // Print semicolons at the ends of statements.
+        encoding: 'utf-8',            // Which encoding scheme to use on files
+        extensions: [ ".js", ".ts" ]  // Which file extensions to process
+      }),
+      new ESLintPlugin(options),
       new CopyPlugin({
         patterns: [{ from: 'src/index.html' }],
       }),
