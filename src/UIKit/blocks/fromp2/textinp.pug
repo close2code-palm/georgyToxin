@@ -1,9 +1,10 @@
 mixin textField(viewmode, value)
   .textField
-    label(for="textField") Textfield 
-    label(for="textField")  
+    .textAbove
+      label.naming(for="textField") Textfield 
+      label.mode(for="textField")= viewmode
       input#textField(
-        type="text", 
-        name="Textfield", 
-        value=${value}
+          type="text", 
+          name="Textfield", 
+          value=value}
       )
