@@ -1,3 +1,21 @@
 .textField 
-    width: 320px
-  height: 44px
+  width: 320px
+
+  .textabove
+    box-sizing: 15px
+
+    .naming, .mode
+      @use general-ui
+      @extend h3
+
+    .mode
+      font-weight: normal
+
+    .mod:matches(:hover, :focus)
+      
+    
+  #textField
+    height: 44px
+    border: 1px solid $primary-color-ds50
+    box-sizing: border-box
+    border-radius: 4px
