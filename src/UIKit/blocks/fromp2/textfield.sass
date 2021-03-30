@@ -11,11 +11,14 @@
     .mode
       font-weight: normal
 
-    .mod:matches(:hover, :focus)
-      
     
   #textField
-    height: 44px
-    border: 1px solid $primary-color-ds50
-    box-sizing: border-box
+    border: 1px solid $primary-color-ds25
     border-radius: 4px
+    box-sizing: border-box
+    height: 44px
+
+    &:matches(:hover, :focus)
+      border-color: $primary-color-ds50 
+      color: $primary-color-ds75
+      
