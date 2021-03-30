@@ -1,0 +1,9 @@
+  mixin droplistel(name)
+    - var count = 0
+    span
+      h3= name
+      button(type='button', onclick= count++)
+      h3= count
+      button(type='button',
+        if (count < 1) disabled, 
+        onclick= count--)
