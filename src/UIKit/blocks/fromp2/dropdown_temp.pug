@@ -1,0 +1,31 @@
+  mixin droplistel(name)
+
+    span
+      h3= name
+      button(type='button', onclick= count++)
+      h3= count
+      button(type='button',
+        if (count < 1) disabled, 
+        onclick= )
+
+mixin dropdown(row-names)
+each row in row-names
+  +droplistel(row)
+
+  block form-methods
+  
++dropdown(Спальни, кровати, ванные комнаты)
+
++dropdown(Взрослые, дети, младенцы)
+  block form-methods
+  span.buttons
+    button(type="reset") Очистить
+    button(type="submit") Применить
+
++dropdown(Взрослые, дети, младенцы)
+  block form-methods
+  span.buttons 
+    button(type="reset") Очистить
+    button(type="submit") Применить
+
+  
